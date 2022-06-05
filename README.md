@@ -40,4 +40,8 @@ $ docker run -it --privileged --net=host \
 
 # License
 
-This software includes the work that is distributed in the Apache License 2.0.
+For the license of each software, please refer to the following.
+
+[YOLOX](https://github.com/Megvii-BaseDetection/YOLOX/blob/main/LICENSE)
+
+[DL Streamer](https://github.com/dlstreamer/dlstreamer/blob/master/LICENSE)
