@@ -38,10 +38,14 @@ $ docker run -it --privileged --net=host \
    python3 python/pipeline.py -i file://${PWD}/sample.mp4 -m yolox_s.xml
 ```
 
-# License
+# Reference
 
 For the license of each software, please refer to the following.
 
 [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX/blob/main/LICENSE)
 
 [DL Streamer](https://github.com/dlstreamer/dlstreamer/blob/master/LICENSE)
+
+The following sample video was borrowed.
+
+https://www.pexels.com/ja-jp/video/853889/
