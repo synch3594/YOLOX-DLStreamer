@@ -1,8 +1,8 @@
 # YOLOX-dlstreamer
 
-Running [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX) with [DL Streamer](https://github.com/openvinotoolkit/dlstreamer_gst).
+Deployed [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX) to [DL Streamer](https://github.com/openvinotoolkit/dlstreamer_gst).
 
-There are multiple ways to implement [custom processes](https://github.com/openvinotoolkit/dlstreamer_gst/wiki/Custom-Processing#3-insert-gvapython-element-and-provide-python-callback-function) in DL Streamer, but we are using callbacks to implement them.
+<div align="center"><img src="sample.gif"/></div>
 
 # Installation
 
