@@ -6,26 +6,34 @@ Deployed [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX) to [DL Streamer]
 
 # Installation
 
-## 1. Install OpenVINO
+## Build docker image.
 
-see. [OpenVINO Installation](https://docs.openvinotoolkit.org/latest/openvino_docs_install_guides_installing_openvino_linux.html)
-
-## 2. Install YOLOX
-
-see. [YOLOX Installation](https://github.com/Megvii-BaseDetection/YOLOX#quick-start)
+```
+$ docker build -t yolox_dlstreamer:latest .
+```
 
 # Run
 
-Setup the OpenVINO environment beforehand.
+## Download OpenVINO models.
 
 ```
-source /opt/intel/openvino_2021/bin/setupvars.sh
+# Download YOLOX-s OpenVINO format models from the YOLOX repository
+$ wget https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_s_openvino.tar.gz
+$ tar xf yolox_s_openvino.tar.gz
 ```
 
-Run pipeline.
+## Run pipeline.
 
 ```
-python3 pipeline.py -i file:///path/to/input.mp4 -m /path/to/yolox_s.xml
+$ docker run -it --privileged --net=host \
+   --device /dev/dri \
+   -v ~/.Xauthority:/home/dlstreamer/.Xauthority \
+   -v /tmp/.X11-unix \
+   -e DISPLAY=$DISPLAY \
+   -v /dev/bus/usb \
+   -v ${PWD}:/${PWD} -w ${PWD} \
+   --rm yolox_dlstreamer:latest \
+   python3 python/pipeline.py -i file://${PWD}/sample.mp4 -m yolox_s.xml
 ```
 
 # License
