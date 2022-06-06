@@ -4,6 +4,10 @@ Deployed [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX) to [DL Streamer]
 
 <div align="center"><img src="sample.gif"/></div>
 
+# Requirements
+
+[OpenVINO™ System Requirements](https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/system-requirements.html)
+
 # Installation
 
 ## Build docker image.
