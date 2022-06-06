@@ -6,7 +6,8 @@ Deployed [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX) to [DL Streamer]
 
 # Requirements
 
-[OpenVINO™ System Requirements](https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/system-requirements.html)
+Requires a 6th generation or later Intel CPU.  
+See [OpenVINO™ System Requirements](https://www.intel.com/content/www/us/en/developer/tools/openvino-toolkit/system-requirements.html) for details.
 
 # Installation
 
